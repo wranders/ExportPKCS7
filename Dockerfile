@@ -6,6 +6,6 @@ RUN apk add --no-cache cdrkit
 # created here
 RUN mkdir /build
 WORKDIR /build
-COPY buildiso.sh ExportPKCS7.psm1 install.ps1 /build/
+COPY buildiso.sh ExportPKCS7.psm1 install.ps1 LICENSE /build/
 
 RUN /build/buildiso.sh
